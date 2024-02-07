@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Boas Vindas a Calculadora</h1>
+    <div class="calculo">
+        <div class="primeiro-numero">
+            <p class="paragrafo-primeiro-numero">Digite o primeiro número</p>
+            <input class="input-primeiro-numero" type="number" id="numero1" name="numero1"> 
+        </div>
+        <div class="operacao">
+            <p class="paragrafo-operacao">Operação: <br> Insira somente um parametro valido para o calculo: <strong><br> + (ADIÇÃO) <br> - (SUBTRAÇÃO) <br>  * (MULTIPLICAÇÃO) <br>  / (DIVISÃO)</strong></p>
+            <input class="input-operacao" type="text" name="operacao" id="operacao">
+        </div>
+        <div class="segundo-numero">
+            <p class="paragrafo-segundo-numero">Digite o segundo número</p>
+            <input class="input-segundo-numero" type="number" id="numero2" name="numero2">
+        </div>
+    </div>
+    <p class="resultado" id="result">R E S U L T A D O</p>
+
+    <button onclick="calcular(operacao)">Calcular</button>
+
+
+    <script src="main.js"></script>
+
+</body>
+</html>
